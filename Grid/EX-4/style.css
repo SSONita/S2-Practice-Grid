@@ -1,0 +1,440 @@
+body{
+    background: black;
+    display: grid;
+    font-family: sans-serif;
+}
+.logo{
+    width: 70px;
+    background-color: transparent;
+}
+.name{
+    color: white;
+    padding-top: 10px;
+}
+.nav-left{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.nav-center{
+    display: flex;
+    height: 40px;
+    background-color: gray;
+    border-radius: 40px;
+    padding-left: 6%;
+    padding-right: 6%;
+    gap: 20px;
+    overflow: visible;
+}
+.Dashboard, .Transactions, .Statistics, .Wallet{
+    color: white;
+    border-radius: 30px;
+    font-size: smaller;
+}
+.Dashboard{
+    height: auto;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
+    color: black;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.nav-left > p span{
+    color: gray;
+}
+i{
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    opacity: 0.5;
+}
+.pfp{
+    width: 40px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/*Main*/
+
+.main{
+    display: grid;
+    gap: 1rem;
+    grid-row: 50px;
+}
+.title{
+    color: white;
+    grid-column: span 4;
+    font-size: xx-large;
+    padding-left: 15px;
+}
+.balance{
+    background: rgb(33,237,156);
+    background: linear-gradient(67deg, rgba(33,237,156,1) 0%, rgba(252,251,155,1) 92%);
+    grid-column: span 3;
+    border-radius: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 300px;
+    border: 5px solid white;
+}
+#balance{
+    font-size: larger;
+    
+}
+#amount{
+    font-size: xx-large;
+}
+#revenue{
+    font-size: smaller;
+}
+.option{
+    display: flex;
+    flex-direction: row;
+    
+}
+.transfer{
+    margin-top: 60px;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+.top-up{
+    margin-top: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 20px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.income{
+    background: rgb(19,19,20);
+    background: linear-gradient(67deg, rgba(19,19,20,1) 0%, rgba(121,121,133,1) 63%, rgba(148,179,148,1) 100%);
+    color: white;
+    grid-column: span 1;
+    border-radius: 30px;
+    padding: 15px;
+    height: 130px;
+    
+}
+.income-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#income-percent{
+    background-color: #1ebd1e;
+    padding: 5px;
+    border-radius: 15px;
+}
+.expense{
+    background: rgb(19,19,20);
+    background: linear-gradient(67deg, rgba(19,19,20,1) 0%, rgba(121,121,133,1) 63%, rgba(179,148,148,1) 100%);
+    color: white;
+    grid-column: span 1;
+    border-radius: 30px;
+    padding: 15px;
+    height: 130px;
+}
+.expense-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#expense-percent{
+    background-color: rgb(194, 67, 67);
+    padding: 5px;
+    border-radius: 15px;
+}
+.side1{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: small;
+    align-items: end;
+}
+
+.revenue-flow{
+    background: rgb(83,69,95);
+    background: linear-gradient(67deg, rgba(83,69,95,1) 17%, rgba(63,63,63,1) 92%);
+    color: white;
+    grid-column: span 2;
+    border-radius: 30px;
+    padding: 15px;
+}
+.revenue-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.sort{
+    background-color: gray;
+    padding: 5px;
+    border-radius: 15px;
+}
+.jun, .jul, .aug, .sep, .oct{
+    text-align: center;
+}
+#jun-data{
+    background-color: violet;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 40px;
+}
+#jul-data{
+    background-color: violet;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 31px;
+}
+#aug-data{
+    background-color: violet;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 28px;
+}
+#sep-data{
+    background-color: violet;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 12px;
+}
+#oct-data{
+    background-color: rgb(179, 61, 208);
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-top: 54px;
+    border: 1px solid white;
+}
+.transaction{
+    background: rgb(98,97,98);
+    background: linear-gradient(67deg, rgba(98,97,98,1) 17%, rgba(74,72,72,1) 92%);
+    color: white;
+    grid-column: span 2;
+    border-radius: 30px;
+    padding: 15px;
+}
+.transaction-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.transaction-info{
+    display: flex;
+    flex-direction: column;
+    
+}
+.transaction1, .transaction2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: small;
+    background-color: gray;
+    border-radius: 20px;
+    border: 1px solid darkgray;
+}
+.transaction1>img{
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+.transaction2>img{
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+aside{
+    background: rgb(98,97,98);
+    background: linear-gradient(67deg, rgba(98,97,98,1) 17%, rgba(74,72,72,1) 92%);
+    width: 350px;
+    display: grid;
+    grid-column: 2;
+    height: 650px;
+    border-radius: 30px;
+    
+}
+
+/*card*/
+#card1{
+    position: absolute;
+    padding-top: 30px;
+    
+}
+#card2{
+    position: absolute;
+    padding-top: 0;
+
+}
+#card3{
+    position: absolute;
+    padding-top: 50px;
+}
+.card-size{
+    width: 250px;
+}
+.card{
+    position: relative;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-title{
+    color: white;
+    font-size: larger;
+}
+.sidebar-title > span{
+    font-size: 15px;
+    vertical-align: super;
+}
+.main-body{
+    display: grid;
+    grid-template-columns: auto 350px;
+    column-gap: 1rem;
+    padding: 15px;
+}
+.sidebar-top{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+.add{
+    margin-left: auto;
+    
+}
+.add >strong{
+    background-color: white;
+    font-size: larger;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.subscribtion{
+    background: rgb(76,76,76);
+    background: linear-gradient(360deg, rgba(76,76,76,1) 0%, rgba(108,97,97,1) 85%, rgba(149,86,93,1) 100%);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 200px;
+    position: relative;
+    box-shadow: 1px -2px 30px 2px ;
+    
+}
+.subscribtion-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: white;
+}
+.subscribtion-title >span{
+    vertical-align: super;
+}
+.app{
+    padding-bottom: 10px;
+}
+
+.subscribtion-info{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    height: 200px;
+    padding: 15px;
+    border-radius: 15px;
+    overflow-y: auto;
+    gap: 10px;
+}
+.subscribtion-info::-webkit-scrollbar{
+    display: none;
+}
+.line1, .line2, .line3, .line4, .line5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkgrey;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+@media (max-width: 1000px) {
+    .main-body {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        gap: 1rem; /* Space between sections */
+    }
+    aside {
+        width: 100%; /* Make sidebar full width */
+    }
+}
+@media (max-width: 800px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; 
+    }
+}
+@media (max-width: 900px) {
+    .nav{
+        font-size: small;
+    }
+    .nav-center{
+        align-items: center;
+    }
+}
+@media (max-width: 800px){
+    .nav-center{
+        font-size: xx-small;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .main-body{ grid-template-columns:repeat(2); 
+    }
+    .nav{ grid-template-columns: repeat(3, 1fr); }
+  }
+
+
